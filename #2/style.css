@@ -1,0 +1,62 @@
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 5px;
+}
+
+.zone{
+    cursor: pointer;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.zone:hover{
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px 5px 15px;
+}
+
+.green{
+    background: linear-gradient(#56B870 0%, #a5c956 100%);
+    grid-column: span 3;
+   
+}
+.red{
+    background: linear-gradient(#be48b2 0%, #c80710 100%);
+    grid-row: span 2;
+   
+}
+.blue{
+    background: linear-gradient(#76b0f8 0%, #3a8deb 100%);
+    grid-column: span 2;
+    grid-row: span 3;
+}
+.yellow{
+    background: linear-gradient(#f6f921 0%, #fbb514 100%);
+    grid-row: span 3;
+   
+}
+.purple{
+    background: linear-gradient(#a081e6 0%, #f5c5e8 100%);
+    
+    grid-column: span 2;
+    grid-row: span 2;
+   
+}
+.brown{
+    background: linear-gradient(#f6dfa8 0%, #ab7135 100%);
+    grid-column: span 2;
+    grid-row: span 2;
+   
+}
+.black{
+    background: linear-gradient(#333 0%, #000 100%);
+    grid-row: span 2;
+}
+.grey{
+    background: linear-gradient(#eee 0%, #333 100%);
+   grid-column: span 3;
+}

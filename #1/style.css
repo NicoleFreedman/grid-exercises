@@ -1,0 +1,41 @@
+.container{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
+    
+    
+}
+
+.zone{
+    cursor: pointer;
+    text-align: center;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+
+.green{
+    background: linear-gradient(#56B870 0%, #a5c956 100%);
+    grid-column: span 2;
+   
+}
+.red{
+    background: linear-gradient(#be48b2 0%, #c80710 100%);
+    grid-column: span 2;
+   
+}
+.blue{
+    background: linear-gradient(#76b0f8 0%, #3a8deb 100%);
+}
+.yellow{
+    background: linear-gradient(#f6f921 0%, #fbb514 100%);
+    grid-column: span 3;
+   
+}
+.purple{
+    background: linear-gradient(#a081e6 0%, #f5c5e8 100%);
+    grid-column: span 4;
+   
+}
